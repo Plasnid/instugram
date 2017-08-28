@@ -1,0 +1,14 @@
+{
+  "name": "instugram",
+  "version": "1.0.0",
+  "description": "an example for pulling instagram",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "instafeed.js": "^1.4.1"
+  }
+}

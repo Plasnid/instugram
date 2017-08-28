@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Lets get some instagram going!</title>
+  <script src="require.js"></script>
+  <style>
+    #instafeed a{
+      display: inline-block;
+      box-shadow: 10px 10px 5px #888888;
+      margin: 15px;
+      border: 2px solid black;
+    }
+  </style>
+</head>
+<body>
+  <h1>Instagram Feed Example</h1>
+  <div id="instafeed"></div>
+  <script>
+  require(["node_modules/instafeed.js/instafeed.js"], function(Instafeed){
+    console.log('Do we now have instafeed?');
+    var feed = new Instafeed({
+      get: 'user',
+      userId: '15693691',// the userId number goes here
+      accessToken:'where your access token goes'
+    });
+    feed.run();
+  });
+  </script>
+</body>
+</html>
